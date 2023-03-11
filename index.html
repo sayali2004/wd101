@@ -7,18 +7,10 @@
 <link rel='stylesheet' href='js-form-validation.css' type='text/css' />
 <script src="sample-registration-form-validation.js"></script>
 </head>
-
- <body bgcolor="orange" onload="document.registration.userid.focus();">
+<body onload="document.registration.userid.focus();">
 <h1>Registration Form</h1>
 Use tab keys to move from one input field to the next.
 <form name='registration' onSubmit="return formValidation();">
- 
-    <div id="mtable" style="display:none">
-        <button id="close">Close</button>
-        <div id="Grid">
-        </div>
-    </div>
-</div>
 <ul>
 <li><label for="userid">User id:</label></li>
 <li><input type="text" name="userid" size="12" /></li>
