@@ -12,6 +12,19 @@
 <h1>Registration Form</h1>
 Use tab keys to move from one input field to the next.
 <form name='registration' onSubmit="return formValidation();">
+ <div class="content-wrapper">
+    <div id="userinput">
+        <form id="Gridform">
+            <input type="text" class="e-input" id="multiplier" placeholder="Enter number 1-9" />
+            <button id="submit">Submit</button>
+        </form>
+    </div>
+    <div id="mtable" style="display:none">
+        <button id="close">Close</button>
+        <div id="Grid">
+        </div>
+    </div>
+</div>
 <ul>
 <li><label for="userid">User id:</label></li>
 <li><input type="text" name="userid" size="12" /></li>
