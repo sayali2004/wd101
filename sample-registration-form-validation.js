@@ -279,7 +279,7 @@ grid.appendTo('#Grid');
  
 document.getElementById("Gridform").addEventListener("submit", (e) => {
 e.preventDefault();
-  var value = parseInt(document.getElementById('multiplier').value, 10);
+  var value = parseInt(document.getElementById('identity').value, 10);
  
  // Filtering the data with user input value
   data = new ej.data.DataManager(window.hierarchyOrderdata).executeLocal(new ej.data.Query().where("EmployeeID", "equal", value).take(15));
