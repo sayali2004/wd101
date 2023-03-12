@@ -16,8 +16,8 @@
             const dateEle= document.createElement('td');
             nameEle.innerHTML = name;
             emailEle.innerHTML = email;
-            nameEle.innerHTML = password;
-            nameEle.innerHTML = date;
+            passwoedEle.innerHTML = password;
+            dateEle.innerHTML = date;
             trElement.appendChild(nameEle);
             trElement.appendChild(emailEle);
             trElement.appendChild(passwordEle);
@@ -34,7 +34,7 @@
         <div class="form">
             <label>Name: <input id="name" type="text"></label>
             <label>Email: <input id="email" type="text"></label>
-            <label>Password: <input id="email" type="text"></label>
+            <label>Password: <input id="password" type="text"></label>
             <label>Date Of Birth: <input id="date" type="date"></label>
             <span id="error"></span>
             <br><br>
@@ -45,7 +45,7 @@
             <table id="table">
                 <thead>
                     <tr>
-                        <br><br>
+                        
                         <th>Name</th>
                         <th>Email</th>
                         <th>Password</th>
