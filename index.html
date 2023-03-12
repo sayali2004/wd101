@@ -1,7 +1,5 @@
-<!DOCTYPE html>
 <html>
-
-  <script>
+<script>
     function publishToTable() {
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
@@ -22,30 +20,86 @@
         }
     }
 </script>
-<body bgcolor="white" font-color="red">
- <div class="complete">
+
+<body>
+    <style>
+        div.complete {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10%;
+            overflow: auto;
+        }
+
+        div.form {
+            height: 200px;
+        }
+
+        label {
+            margin: 20px;
+            display: block;
+            font-size: 32px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        span {
+            color: red;
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 40px;
+            left: 50%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+        }
+
+        div#tables {
+            height: 300px;
+            overflow: auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            font-size: 32px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+            padding: 10px;
+        }
+
+        th {
+            width: 20%;
+        }
+    </style>
+    <div class="complete">
         <div class="form">
             <label>Name: <input id="name" type="text"></label>
             <label>Email: <input id="email" type="text"></label>
-     
-       <label>Password:<input id="password" type="text"></label>
-       <label>Date Of Birth:<input id="date" type="date"></label>
             <span id="error"></span>
             <button onclick="publishToTable()">Submit</button>
         </div>
-   <div id="tables">
-            <table id="table"><div id="tables">
+        <div id="tables">
             <table id="table">
                 <thead>
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Date Of Birth</th>
-                        <th>Password</th>
                     </tr>
                 </thead>
             </table>
         </div>
     </div>
 </body>
+
 </html>
