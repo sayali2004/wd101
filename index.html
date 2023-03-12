@@ -10,46 +10,91 @@
             const trElement = document.createElement('tr');
             const tbodyElement = document.createElement('tbody');
             const nameEle = document.createElement('td');
-           
             const emailEle = document.createElement('td');
-            const passwordEle = document.createElement('td');
-            const dateEle= document.createElement('td');
             nameEle.innerHTML = name;
             emailEle.innerHTML = email;
-            passwoedEle.innerHTML = password;
-            dateEle.innerHTML = date;
             trElement.appendChild(nameEle);
             trElement.appendChild(emailEle);
-            trElement.appendChild(passwordEle);
-            trElement.appendChild(dateEle);
             tbodyElement.appendChild(trElement);
             tableElement.appendChild(tbodyElement);
         }
     }
-</script>
+    </script>
 
 <body>
-   
+    <style>
+        div.complete {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10%;
+            overflow: auto;
+        }
+
+        div.form {
+            height: 200px;
+        }
+
+        label {
+            margin: 20px;
+            display: block;
+            font-size: 32px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        span {
+            color: red;
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 40px;
+            left: 50%;
+            position: fixed;
+            transform: translate(-50%, -50%);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+        }
+
+        div#tables {
+            height: 300px;
+            overflow: auto;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid red;
+            border-collapse: collapse;
+            font-size: 32px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+            padding: 10px;
+        }
+
+        th {
+            width: 20%;
+        }
+    </style>
     <div class="complete">
         <div class="form">
             <label>Name: <input id="name" type="text"></label>
             <label>Email: <input id="email" type="text"></label>
-            <label>Password: <input id="password" type="text"></label>
-            <label>Date Of Birth: <input id="date" type="date"></label>
             <span id="error"></span>
-            <br><br>
             <button onclick="publishToTable()">Submit</button>
         </div>
-        
         <div id="tables">
             <table id="table">
                 <thead>
                     <tr>
-                        
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Password</th>
-                        <th>Date of Birth</th>
                     </tr>
                 </thead>
             </table>
