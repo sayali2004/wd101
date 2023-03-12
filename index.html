@@ -10,11 +10,18 @@
             const trElement = document.createElement('tr');
             const tbodyElement = document.createElement('tbody');
             const nameEle = document.createElement('td');
+           
             const emailEle = document.createElement('td');
+            const passwordEle = document.createElement('td');
+            const dateEle= document.createElement('td');
             nameEle.innerHTML = name;
             emailEle.innerHTML = email;
+            nameEle.innerHTML = password;
+            nameEle.innerHTML = date;
             trElement.appendChild(nameEle);
             trElement.appendChild(emailEle);
+            trElement.appendChild(passwordEle);
+            trElement.appendChild(dateEle);
             tbodyElement.appendChild(trElement);
             tableElement.appendChild(tbodyElement);
         }
