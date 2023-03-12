@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head></head>
+  <script>
+    function publishToTable() {
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const error = document.getElementById('error');
+        error.innerHTML = (!name || !email) ? 'Name & Email both values are required.' : '';
+        if (name && email) {
+            const tableElement = document.getElementById('table');
+            const trElement = document.createElement('tr');
+            const tbodyElement = document.createElement('tbody');
+            const nameEle = document.createElement('td');
+            const emailEle = document.createElement('td');
+            nameEle.innerHTML = name;
+            emailEle.innerHTML = email;
+            trElement.appendChild(nameEle);
+            trElement.appendChild(emailEle);
+            tbodyElement.appendChild(trElement);
+            tableElement.appendChild(tbodyElement);
+        }
+    }
+</script>
 <body bgcolor="white" font-color="red">
   <script type="text/javascript" src="index.js"></script>
 
@@ -44,7 +65,8 @@
 <tr> <td>&nbsp;</td> </tr>
 <table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
 <tr>
-    <td align='center'><input type='submit' name='REGISTER' value="register"></td>
+   
+      <td><button onclick="publishToTable()">Submit</button></td>
 </tr>
 </table>
 </table>
