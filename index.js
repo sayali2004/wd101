@@ -18,7 +18,11 @@ const dobDate = new Date(dob);
 
 const age = today.getFullYear() dobDate.getFullYear();
 
-// Check if age is between 18 and 55 if (age<18 || age > 55) { alert("Age should be between 18 and 55 years."); return; }
+// Check if age is between 18 and 55 
+if (age<18 || age > 55) { 
+  alert("Age should be between 18 and 55 years.");
+  return; 
+}
 
 // Save form data to localstorage
 
@@ -32,7 +36,8 @@ localstorage.setItem("terms", terms);
 
 // Add form data to table
 
-const row = dataTable.insertRow(); const nameCell = row. insertCell();
+const row = dataTable.insertRow(); 
+const nameCell = row. insertCell();
 
 const emailcell = row. insertCell();
 
@@ -41,9 +46,10 @@ const passwordcell=row.insertCell();
 const termscell=row.insertCell();
 nameCell.innerHTML = name;
 
-emailcell.innerHTML email;
+emailcell.innerHTML=email;
 
-dobCell.innerHTML dob; passwordcell.innerHTML=password;
+dobCell.innerHTML=dob; 
+passwordcell.innerHTML=password;
 
 termscell.innerHTML=terms;
 
@@ -51,7 +57,8 @@ termscell.innerHTML=terms;
 
 alert("Registration successful.");
 
-// Retrieve form data from localstorage const savedName= localstorage.getItem("name");
+// Retrieve form data from localstorage 
+const savedName= localstorage.getItem("name");
 
 const savedEmail = localstorage.getItem("email");
 
