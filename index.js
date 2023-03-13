@@ -2,13 +2,17 @@ const registrationForm = document.getElementById("registrationForm");
 
 const dataTable = document
 
-.getElementById("dataTable") .getElementsByTagName("tbody")[0];
+.getElementById("dataTable") 
+.getElementsByTagName("tbody")[0];
 
-registrationForm.addEventListener("submit", function (e) e.preventDefault();
+registrationForm.addEventListener("submit", function (e){
+ e.preventDefault();
 
-const name = document.getElementById("name").value; const email = document.getElementById("email").value;
+const name = document.getElementById("name").value; 
+const email = document.getElementById("email").value;
 
-const dob= document.getElementById("dob").value; const password=document.getElementById("password").value;
+const dob= document.getElementById("dob").value; 
+ const password=document.getElementById("password").value;
 
 const terms = document.getElementById("terms").checked;
 
@@ -26,7 +30,8 @@ if (age<18 || age > 55) {
 
 // Save form data to localstorage
 
-localstorage.setItem("name", name); localstorage.setItem("email", email);
+localstorage.setItem("name", name); 
+localstorage.setItem("email", email);
 
 localstorage.setItem("dob", dob);
 
