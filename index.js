@@ -20,7 +20,7 @@ const today = new Date();
 
 const dobDate = new Date(dob);
 
-const age = today.getFullYear() dobDate.getFullYear();
+const age = today.getFullYear()- dobDate.getFullYear();
 
 // Check if age is between 18 and 55 
 if (age<18 || age > 55) { 
@@ -42,11 +42,11 @@ localstorage.setItem("terms", terms);
 // Add form data to table
 
 const row = dataTable.insertRow(); 
-const nameCell = row. insertCell();
+const nameCell = row.insertCell();
 
-const emailcell = row. insertCell();
+const emailcell = row.insertCell();
 
-const dobCell = row. insertCell();
+const dobCell = row.insertCell();
 const passwordcell=row.insertCell();
 const termscell=row.insertCell();
 nameCell.innerHTML = name;
