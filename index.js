@@ -87,24 +87,24 @@ const savedTerms = localstorage.getItem("terms");
 
 if (savedName && savedEmail && savedDob && savedPassword && savedTerms) {
 
-const row dataTable.insertRow();
+const row=dataTable.insertRow();
 
-const nameCell row. insertCell();
+const nameCell=row. insertCell();
 
-const emailcell row. insertCell();
+const emailcell=row. insertCell();
 
-const dobCell row. insertCell();
+const dobCell=row. insertCell();
 
-const passwordcell-row. insertCell();
+const passwordcell=row. insertCell();
 
-const termscell-row.insertcell();
+const termscell=row.insertcell();
 
-nameCell.innerHTML savedName;
+nameCell.innerHTML=savedName;
 
-emailcell.innerHTML savedEmail;
+emailcell.innerHTML=savedEmail;
 
 dobCell.innerHTML savedDob;
 
-passwordcell.innerHTML=-savedPassword; 
-    termscell.innerHTML=savedTerms;
+passwordcell.innerHTML=savedPassword; 
+termscell.innerHTML=savedTerms;
 }
