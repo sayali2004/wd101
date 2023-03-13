@@ -29,17 +29,8 @@
             trElement.appendChild(conditionsEle);
             tbodyElement.appendChild(trElement);
             tableElement.appendChild(tbodyElement);
-            function passid_validation(passid,mx,my)
-{
-var pass_len = pass.value.length;
-if (pass_len == 0 ||pass_len >= my || pass_len < mx)
-{
-alert("Password should not be empty / length be between "+mx+" to "+my);
-pass.focus();
-return false;
-}
-return true;
-}
-        }
+           
+
+    }
     }
     
