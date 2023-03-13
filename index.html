@@ -1,97 +1,38 @@
-<html>
-<head>
-<script src="index.js"></script>
-    </head>
-    <body>
-    <style>
-        div.complete {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 10%;
-            overflow: auto;
-        }
+<body>
 
-        div.form {
-            height: 200px;
-        }
+<h2>REGISTRATION FORM </h2> <form id="registrationForm">
 
-        label {
-            margin: 20px;
-            display: block;
-            font-size: 10px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-        }
+<label for="name">Name:</label> <input type="text" id="name" nam "name" required />
+    <label for="email">Email:</label>
 
-        input {
-            padding: 10px;
-        }
+<input type="email" id="email" name="email" required />
+<label for "dob">Date of Birth:</label> <input type="date" id="dob" name="dob" required />
+<label for="password">Password:</label>
 
-        span {
-            color: red;
-            
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        button {
-            padding: 10px;
-            margin-top:100px;
-           
-            position:fixed;
-            left: 50%;
-            
-            transform: translate(-50%, -50%);
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-        }
-         div#tables {
-            height: 300px;
-            overflow: auto;
-              margin-top: 80px;
-        }
+<input
 
-        
+type="password"
 
-        th {
-            width: 10%;
-        }
+id="password" name="password"
 
+minlength="8" required
+       />
+    <label>
 
-        
-   table,
-        th,
-        td {
-            border: 1px solid red;
-            border-collapse: collapse;
-            font-size: 20px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
-            padding: 10px;
-        }    
-    </style>
-    <div class="complete">
-        <div class="form">
-            <label>Name: <input id="name" type="text"></label>
-            <label>Email: <input id="email" type="text"></label>
-            <label>Password: <input id="pass" type="text"></label>
-            <label>Date Of Birth <input id="date" type="date"></label>
-            <label>Accept Terms and conditions<input id="conditions" type="checkbox"></label>
-            <span id="error"></span>
-            <button onclick="publishToTable()">Submit</button>
-        </div>
-        <div id="tables">
-            <table id="table">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Email</th>
-                        <th>Password</th>
-                        <th>DOB</th>
-                        <th>Accepted terms</th>
-                    </tr>
-                </thead>
-            </table>
-        </div>
-    </div>
-</body>
+<input type="checkbox" id="terms" name="terms" required /> I accept the terms and conditions </label>
+<button type="submit">Submit</button>
 
-</html>
+</form>
+    <table id="dataTable">
+
+<thead><h2>ENTRIES</h2>
+
+<tr>
+
+<th>Name</th>
+
+<th>Email</th> <th>Dobk/th>
+
+<th>Password</th>
+
+<th>Accepted terms?</th>
