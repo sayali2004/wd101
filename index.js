@@ -1,10 +1,11 @@
-function nameid_validation(name,mx,my)
+
+function passid_validation(passid,mx,my)
 {
-var name_len = name.value.length;
-if (name_len == 0 || uid_len >= my || uid_len < mx)
+var pass_len = pass.value.length;
+if (pass_len == 0 ||pass_len >= my || passid_len < mx)
 {
-alert("name should not be empty "+mx+" to "+my);
-name.focus();
+alert("Password should not be empty / length be between "+mx+" to "+my);
+pass.focus();
 return false;
 }
 return true;
